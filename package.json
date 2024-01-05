@@ -1,20 +1,25 @@
 {
-  "name": "svrollbar",
-  "version": "0.12.0",
+  "name": "svelte-scrollbar",
+  "version": "1.0.0",
   "description": "simple custom scrollbar made by svelte",
   "repository": {
     "type": "git",
-    "url": "https://github.com/daylilyfield/svrollbar"
+    "url": "https://github.com/leshak/svelte-svrollbar"
   },
-  "homepage": "https://github.com/daylilyfield/svrollbar#readme",
+  "homepage": "https://github.com/leshak/svelte-svrollbar#readme",
   "bugs": {
-    "url": "https://github.com/daylilyfield/svrollbar/issues"
+    "url": "https://github.com/leshak/svelte-svrollbar/issues"
   },
   "author": "daylilyfield",
   "license": "MIT",
   "main": "lib/index.js",
   "module": "lib/index.mjs",
   "svelte": "src/index.js",
+  "exports": {
+    ".": {
+      "svelte": "./src/index.js"
+    }
+  },
   "types": "types/index.d.ts",
   "scripts": {
     "lint": "prettier --check ./src && eslint ./src --ext .js,.jsx,.ts,.tsx && svelte-check --ignore example",
